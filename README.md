@@ -19,10 +19,7 @@ The following **required** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
-<img src='https://imgur.com/DIobrEi' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src="https://imgur.com/DIobrEi" width="40" height="40" />
+Here's a walkthrough of implemented user stories: https://imgur.com/DIobrEi
 
 
 GIF created with [Kap](https://getkap.co/) for macOS
