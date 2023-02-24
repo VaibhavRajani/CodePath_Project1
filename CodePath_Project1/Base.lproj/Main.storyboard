@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CodePath_Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="the hulk" translatesAutoresizingMaskIntoConstraints="NO" id="OkJ-vP-M7n">
+                                <rect key="frame" x="88" y="200" width="216" height="161.66666666666663"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCF-l6-SgL">
+                                <rect key="frame" x="118" y="438.66666666666669" width="157" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Backstory"/>
+                                <connections>
+                                    <segue destination="nLu-XM-peq" kind="showDetail" id="GUr-Ap-xEH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gr8-Z0-5KL">
+                                <rect key="frame" x="128" y="527" width="137" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Weakness"/>
+                                <connections>
+                                    <segue destination="juS-i0-VKW" kind="showDetail" id="IsP-Sr-ORG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7z-jH-NbY">
+                                <rect key="frame" x="63" y="614" width="266.33333333333331" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="How much can I lift?"/>
+                                <connections>
+                                    <segue destination="iZE-d9-9Pq" kind="showDetail" id="TEY-aq-B0f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="The Hulk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70R-CS-jVg">
+                                <rect key="frame" x="157" y="142" width="78.333333333333314" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="70R-CS-jVg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="0pD-3G-62M"/>
+                            <constraint firstItem="gr8-Z0-5KL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="4gl-UZ-Zq2"/>
+                            <constraint firstItem="aCF-l6-SgL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="9y5-VA-Fbw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aCF-l6-SgL" secondAttribute="trailing" constant="118" id="Gxh-GW-KRj"/>
+                            <constraint firstItem="F7z-jH-NbY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="QK3-2f-mXG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gr8-Z0-5KL" secondAttribute="trailing" constant="128" id="Une-LM-a89"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="70R-CS-jVg" secondAttribute="trailing" constant="157.66666666666669" id="VuF-T7-1cw"/>
+                            <constraint firstItem="70R-CS-jVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="WXy-75-cuC"/>
+                            <constraint firstItem="gr8-Z0-5KL" firstAttribute="top" secondItem="aCF-l6-SgL" secondAttribute="bottom" constant="54" id="XWQ-wr-oLG"/>
+                            <constraint firstItem="F7z-jH-NbY" firstAttribute="top" secondItem="gr8-Z0-5KL" secondAttribute="bottom" constant="52" id="dq4-Pf-cQ2"/>
+                            <constraint firstItem="aCF-l6-SgL" firstAttribute="top" secondItem="OkJ-vP-M7n" secondAttribute="bottom" constant="77" id="f7q-kK-eVF"/>
+                            <constraint firstItem="OkJ-vP-M7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="jyx-he-BJT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OkJ-vP-M7n" secondAttribute="trailing" constant="89" id="m6e-dl-dq2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="F7z-jH-NbY" secondAttribute="bottom" constant="169" id="p2Z-5p-N2O"/>
+                            <constraint firstItem="OkJ-vP-M7n" firstAttribute="top" secondItem="70R-CS-jVg" secondAttribute="bottom" constant="34" id="q4a-gU-XnO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F7z-jH-NbY" secondAttribute="trailing" constant="63.666666666666686" id="xHF-vq-te0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-797.70992366412213" y="-240.14084507042256"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L91-He-A8z">
+            <objects>
+                <viewController id="nLu-XM-peq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T6K-Th-cSo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="My Backstory" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MEg-tw-WMI">
+                                <rect key="frame" x="144" y="119" width="104" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the hulk 2" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-Zl-aa3">
+                                <rect key="frame" x="76" y="221" width="240" height="182"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZk-hK-nZo">
+                                <rect key="frame" x="58" y="465" width="277" height="172"/>
+                                <string key="text">The Incredible Hulk's alter ego is nuclear scientist Robert Bruce Banner, inventor of the gamma bomb, who absorbed a vast quantity of gamma rays after risking his life to save a teenager. The Incredible Hulk embodies the darkest, angriest, and most antisocial aspects of Banner's personality.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VPb-jW-Ex4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AZk-hK-nZo" firstAttribute="leading" secondItem="VPb-jW-Ex4" secondAttribute="leading" constant="58" id="AUC-87-N2c"/>
+                            <constraint firstItem="VPb-jW-Ex4" firstAttribute="bottom" secondItem="AZk-hK-nZo" secondAttribute="bottom" constant="146" id="F2e-QJ-unj"/>
+                            <constraint firstItem="VPb-jW-Ex4" firstAttribute="trailing" secondItem="MEg-tw-WMI" secondAttribute="trailing" constant="145" id="IoG-ol-JLf"/>
+                            <constraint firstItem="VPb-jW-Ex4" firstAttribute="trailing" secondItem="sYA-Zl-aa3" secondAttribute="trailing" constant="77" id="Tvk-0n-QCh"/>
+                            <constraint firstItem="AZk-hK-nZo" firstAttribute="top" secondItem="sYA-Zl-aa3" secondAttribute="bottom" constant="62" id="fH6-BK-eEm"/>
+                            <constraint firstItem="MEg-tw-WMI" firstAttribute="leading" secondItem="VPb-jW-Ex4" secondAttribute="leading" constant="144" id="kkI-lE-zAN"/>
+                            <constraint firstItem="MEg-tw-WMI" firstAttribute="top" secondItem="VPb-jW-Ex4" secondAttribute="top" constant="60" id="oPE-9S-9Rx"/>
+                            <constraint firstItem="sYA-Zl-aa3" firstAttribute="leading" secondItem="VPb-jW-Ex4" secondAttribute="leading" constant="76" id="q8Q-Mx-FZe"/>
+                            <constraint firstItem="sYA-Zl-aa3" firstAttribute="top" secondItem="MEg-tw-WMI" secondAttribute="bottom" constant="81" id="uZi-vL-nPf"/>
+                            <constraint firstItem="VPb-jW-Ex4" firstAttribute="trailing" secondItem="AZk-hK-nZo" secondAttribute="trailing" constant="58" id="zvt-PW-NBV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwX-qv-tew" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606.87022900763361" y="-29.577464788732396"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OV4-py-h4c">
+            <objects>
+                <viewController id="iZE-d9-9Pq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kc2-Tq-r7D">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xz-HW-Znr">
+                                <rect key="frame" x="58" y="517" width="277" height="153"/>
+                                <string key="text">The answer; there isn't one. The amazing thing about the Hulk is that unlike nearly every other superhero ever created, the Hulk's strength has absolutely no upper limit. He can lift a commercial airplane – which weighs around 100 tons – when he is at his calmest; that's no problem for him.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="How much can I lift?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="150" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-hK-sEb">
+                                <rect key="frame" x="119" y="129" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the hulk 4" translatesAutoresizingMaskIntoConstraints="NO" id="IVq-h9-qhB">
+                                <rect key="frame" x="38" y="209" width="317" height="254"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tMU-nQ-ubJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5Xz-HW-Znr" firstAttribute="top" secondItem="IVq-h9-qhB" secondAttribute="bottom" constant="54" id="6cT-JK-FaB"/>
+                            <constraint firstItem="tMU-nQ-ubJ" firstAttribute="trailing" secondItem="aZk-hK-sEb" secondAttribute="trailing" constant="120" id="6jP-5d-1QN"/>
+                            <constraint firstItem="tMU-nQ-ubJ" firstAttribute="trailing" secondItem="5Xz-HW-Znr" secondAttribute="trailing" constant="58" id="7YC-qP-ZRC"/>
+                            <constraint firstItem="IVq-h9-qhB" firstAttribute="top" secondItem="aZk-hK-sEb" secondAttribute="bottom" constant="59" id="Bpq-st-dx9"/>
+                            <constraint firstItem="aZk-hK-sEb" firstAttribute="top" secondItem="tMU-nQ-ubJ" secondAttribute="top" constant="70" id="Th4-hC-ItM"/>
+                            <constraint firstItem="IVq-h9-qhB" firstAttribute="leading" secondItem="tMU-nQ-ubJ" secondAttribute="leading" constant="38" id="mO7-Vx-RPC"/>
+                            <constraint firstItem="tMU-nQ-ubJ" firstAttribute="bottom" secondItem="5Xz-HW-Znr" secondAttribute="bottom" constant="113" id="oY0-C2-Y9X"/>
+                            <constraint firstItem="aZk-hK-sEb" firstAttribute="leading" secondItem="tMU-nQ-ubJ" secondAttribute="leading" constant="119" id="stY-iZ-5L3"/>
+                            <constraint firstItem="5Xz-HW-Znr" firstAttribute="leading" secondItem="tMU-nQ-ubJ" secondAttribute="leading" constant="58" id="xH4-bq-Ewn"/>
+                            <constraint firstItem="tMU-nQ-ubJ" firstAttribute="trailing" secondItem="IVq-h9-qhB" secondAttribute="trailing" constant="38" id="ysM-ye-yFy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObG-PB-QWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81.679389312977094" y="626.76056338028172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w6x-Wd-PJM">
+            <objects>
+                <viewController id="juS-i0-VKW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kF9-UQ-dX0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="My Weakness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pp7-5n-XxE">
+                                <rect key="frame" x="144" y="108" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I06-2t-CMH">
+                                <rect key="frame" x="58" y="487.33333333333331" width="277" height="133.66666666666669"/>
+                                <string key="text">Swords, knives, and more have been used against Hulk and almost none of them even leave a scratch or mark on him. However, with that said, there are two bladed weapons that can cut into Hulk's skin. Adamantium is something that can cause damage to Hulk.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="the hulk 3" translatesAutoresizingMaskIntoConstraints="NO" id="w2y-sQ-0cG">
+                                <rect key="frame" x="77" y="210" width="240" height="220.33333333333337"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3aG-VY-qph"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w2y-sQ-0cG" firstAttribute="top" secondItem="pp7-5n-XxE" secondAttribute="bottom" constant="81" id="1KO-15-HpC"/>
+                            <constraint firstItem="pp7-5n-XxE" firstAttribute="top" secondItem="3aG-VY-qph" secondAttribute="top" constant="49" id="JUs-xn-Mfp"/>
+                            <constraint firstItem="3aG-VY-qph" firstAttribute="trailing" secondItem="w2y-sQ-0cG" secondAttribute="trailing" constant="76" id="KCL-sC-faV"/>
+                            <constraint firstItem="I06-2t-CMH" firstAttribute="top" secondItem="w2y-sQ-0cG" secondAttribute="bottom" constant="57" id="OPp-Nt-mJ1"/>
+                            <constraint firstItem="I06-2t-CMH" firstAttribute="leading" secondItem="3aG-VY-qph" secondAttribute="leading" constant="58" id="PeD-VM-aZq"/>
+                            <constraint firstItem="3aG-VY-qph" firstAttribute="bottom" secondItem="I06-2t-CMH" secondAttribute="bottom" constant="162" id="ZUP-xm-t2K"/>
+                            <constraint firstItem="3aG-VY-qph" firstAttribute="trailing" secondItem="pp7-5n-XxE" secondAttribute="trailing" constant="143" id="a9p-sd-GhU"/>
+                            <constraint firstItem="w2y-sQ-0cG" firstAttribute="leading" secondItem="3aG-VY-qph" secondAttribute="leading" constant="77" id="fTJ-mm-qUU"/>
+                            <constraint firstItem="pp7-5n-XxE" firstAttribute="leading" secondItem="3aG-VY-qph" secondAttribute="leading" constant="144" id="gLU-yR-TPU"/>
+                            <constraint firstItem="3aG-VY-qph" firstAttribute="trailing" secondItem="I06-2t-CMH" secondAttribute="trailing" constant="58" id="tER-Kx-X9J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xP-ZA-fn3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="626" y="590"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="the hulk" width="800" height="400"/>
+        <image name="the hulk 2" width="1280" height="720"/>
+        <image name="the hulk 3" width="1280" height="720"/>
+        <image name="the hulk 4" width="602" height="615"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
